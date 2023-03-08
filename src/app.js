@@ -99,10 +99,9 @@ if(taskCompleted){
 //show the task
 $newTaskTemplate.show()
 
-}
-    
-  },
-  createTask:async()=>{
+ }
+},
+  createTask: async ()=>{
     App.setLoading(true)
     const content = $('#newTask').val()
     await App.todoList.createTask(content)
